@@ -18,13 +18,11 @@ import useMaskImage from "@/hooks/useMaskImage";
 import CustomCursor from "./Cursor";
 import { useCursor } from "@/hooks/useCursor";
 import NavigateSVG from "@/components/SVGComponents/NavigateSVG";
-import { useRouter } from "next/navigation";
 import { cubicBezier } from "motion";
 import { useIsMobile } from "@/app/providers";
 
 function Innovation() {
   const isMobile = useIsMobile();
-  const router = useRouter();
   const [state, setState] = useState(0);
   const ref = useRef<HTMLDivElement>(null);
   const { handlers, cursorProps } = useCursor();

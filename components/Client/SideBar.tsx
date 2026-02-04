@@ -5,16 +5,6 @@ import { motion } from "motion/react";
 import Image, { StaticImageData } from "next/image";
 import CustomLink from "@/components/Server/CustomLink";
 import CloseIcon from "@/components/SVGComponents/CloseIcon";
-import Home from "@/public/SideBar/home.png";
-import Destinations from "@/public/SideBar/destination.png";
-import Wellness from "@/public/SideBar/wellness.png";
-import Innovation from "@/public/SideBar/innovation.png";
-import Nature from "@/public/SideBar/nature.png";
-import Community from "@/public/SideBar/community.png";
-import TheStory from "@/public/SideBar/the-story.png";
-import NewDevelopments from "@/public/SideBar/new-developments.png";
-import PressRoom from "@/public/SideBar/press-room.png";
-import Careers from "@/public/SideBar/careers.png";
 import { useImageReveal } from "@/hooks/useImageReveal";
 
 interface LinkItem {
