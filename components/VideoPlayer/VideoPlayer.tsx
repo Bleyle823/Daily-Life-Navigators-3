@@ -6,16 +6,10 @@ import FullScreenIcon from "@/components/SVGComponents/FullScreenIcon";
 interface VideoPlayerProps {
   setPlayIntro: Dispatch<SetStateAction<boolean>>;
   playIntro: boolean;
-  handlers?: {
-    onMouseEnter: (e: React.MouseEvent<HTMLDivElement>) => void;
-    onMouseLeave: () => void;
-    onMouseMove: (e: React.MouseEvent<HTMLDivElement>) => void;
-  };
 }
 export default function VideoPlayer({
   setPlayIntro,
   playIntro,
-  handlers,
 }: VideoPlayerProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const videoProgress = useSpring(0, { mass: 1, damping: 30, stiffness: 100 });
@@ -38,7 +32,6 @@ export default function VideoPlayer({
   const handleClick = (e: React.MouseEvent) => {
     e.stopPropagation();
     setPlayIntro(false);
-    handlers?.onMouseLeave();
   };
   return (
     <>
@@ -47,7 +40,6 @@ export default function VideoPlayer({
           <motion.div
             key="video-container"
             onClick={handleClick}
-            {...handlers}
             initial="initial"
             animate="animate"
             exit="exit"
@@ -88,15 +80,6 @@ export default function VideoPlayer({
               </div>
               <div
                 className="flex items-center gap-5 px-1 py-2"
-                onMouseEnter={(e) => {
-                  e.stopPropagation();
-                  handlers?.onMouseLeave();
-                }}
-                onMouseLeave={(e) => {
-                  e.stopPropagation();
-                  handlers?.onMouseEnter(e);
-                }}
-                onMouseMove={(e) => e.stopPropagation()}
               >
                 <div
                   className="flex-1 cursor-pointer overflow-hidden py-2.5"
