@@ -61,7 +61,7 @@ export default function Marquee({
       <div className="overflow-hidden">
         <motion.div
           className={cn(
-            "text-[100px] [line-height:1] font-light tracking-tight whitespace-nowrap md:text-144",
+            "text-6xl [line-height:1] font-light tracking-tight whitespace-nowrap md:text-[100px] lg:text-144",
             className,
           )}
           style={{ x, ...style }}

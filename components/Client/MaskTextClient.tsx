@@ -62,7 +62,7 @@ export default function MaskTextClient({
           initial="initial"
           animate="animate"
           exit="exit"
-          className={cn("text-center whitespace-nowrap", rest.className)}
+          className={cn("text-center", rest.className)}
           style={{ ...rest.style }}
           variants={containerVariants}
         >

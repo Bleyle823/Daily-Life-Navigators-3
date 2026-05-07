@@ -1,5 +1,5 @@
 import Image from "next/image";
-import FormImage from "@/public/FormImage.png";
+import ClinicalPsychologyForm from "@/public/ClinicalPsychologyForm.png";
 import ParallaxContainer from "@/components/Client/ParallaxContainer";
 import Input from "@/components/Server/Input";
 import Checkbox from "@/components/Client/Checkbox";
@@ -21,10 +21,10 @@ export default function FormServer() {
   return (
     <div className="flex flex-col bg-[#ffbf69] md:grid md:grid-cols-2">
       <ParallaxContainer parallaxAmount={20}>
-        <Image src={FormImage} alt="form-image" className="h-auto w-full" />
+        <Image src={ClinicalPsychologyForm} alt="form-image" className="max-h-[50vh] w-full object-cover md:h-auto md:max-h-none" />
       </ParallaxContainer>
       <div className="col-start-2 flex flex-col items-center justify-center">
-        <Form action={""} className="w-full max-w-102 px-5 py-24 md:p-0">
+        <Form action={""} className="w-full max-w-102 px-6 py-16 md:px-0 md:py-24">
           <div className="w-full text-xl font-light md:text-30">
             Get In Touch
           </div>

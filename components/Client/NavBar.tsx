@@ -64,7 +64,9 @@ export default function NavBar() {
         }}
       >
         <LogoFull
-          className="h-auto w-full max-w-38 origin-left md:max-w-53-75"
+          logoMotion
+          animate={state ? "animate" : "initial"}
+          className="h-auto w-fit max-w-[min(100%,18rem)] origin-left md:max-w-none"
           variants={{
             initial: { color: "#FFFFFF" },
             animate: { color: "#2ec4b6" },

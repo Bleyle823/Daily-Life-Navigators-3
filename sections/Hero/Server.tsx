@@ -53,10 +53,10 @@ export default function HeroServer() {
           transition={{
             delayChildren: 0.4,
           }}
-          className="md:[line-height:1.2]"
+          className="md:[line-height:1.2] text-sm md:text-base [line-height:1.4] whitespace-normal"
           lines={[
-            <>Daily Life Navigators</>,
-            <>Psychological Services</>,
+            <span className="block" key="line1">Daily Life Navigators</span>,
+            <span className="block" key="line2">Psychological Services</span>,
           ]}
         />
         <MaskText

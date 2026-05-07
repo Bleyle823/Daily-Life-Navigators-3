@@ -6,6 +6,7 @@ import AnimatedMaskText from "@/components/Client/MaskTextClient";
 import ClipImageContainer from "@/components/Client/ClipImageContainer";
 import SectionTitle from "../Server/SectionTitle";
 import cn from "@/utils/cn";
+import { useIsMobile } from "@/app/providers";
 interface ClipImageCardProps {
   scrollYProgress: MotionValue<number>;
   images: StaticImageData[];
@@ -27,6 +28,7 @@ export default function ClipImageCard({
   className,
   style,
 }: ClipImageCardProps) {
+  const isMobile = useIsMobile();
   const [currentState, setCurrentState] = useState(1);
   const data: DataItem[] = [
     {
@@ -168,7 +170,7 @@ export default function ClipImageCard({
         </div>
         <AnimatedMaskText
           state={currentState}
-          lines={data[currentState - 1].description["desktop"]} //change this
+          lines={data[currentState - 1].description[isMobile ? "mobile" : "desktop"]}
           className="text-center text-sm [line-height:1.25] md:text-base"
         />
       </motion.div>

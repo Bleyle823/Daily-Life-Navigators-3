@@ -32,10 +32,7 @@ export default function HeroDesktopClient({
           </video>
         </motion.div>
         <motion.div
-          className="absolute inset-x-0 top-0 flex h-screen cursor-pointer flex-col justify-end gap-8"
-          onClick={() => {
-            setPlayIntro((prev) => !prev);
-          }}
+          className="absolute inset-x-0 top-0 flex h-screen flex-col justify-end gap-8"
         />
       </div>
     </>

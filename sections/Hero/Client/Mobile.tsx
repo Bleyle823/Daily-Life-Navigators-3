@@ -1,7 +1,6 @@
 "use client";
 import { Dispatch, SetStateAction } from "react";
-import Cursor from "@/components/Client/Cursor";
-import PlaySVG from "@/components/SVGComponents/PlaySVG";
+
 export default function HeroMobileClient({
   playIntro,
   setPlayIntro,
@@ -12,7 +11,6 @@ export default function HeroMobileClient({
   return (
     <div
       className="absolute inset-0 grid place-items-center"
-      onClick={() => setPlayIntro((prev) => !prev)}
     >
       <video
         className="size-full object-cover md:hidden"
@@ -23,13 +21,7 @@ export default function HeroMobileClient({
       >
         <source src="/Hero/DLN.mp4" type="video/mp4" />
       </video>
-      <Cursor
-        renderCursor={!playIntro}
-        isMobile={true}
-        className="absolute grid aspect-square w-11 place-items-center rounded-full"
-      >
-        <PlaySVG className="w-1/3" />
-      </Cursor>
+
     </div>
   );
 }

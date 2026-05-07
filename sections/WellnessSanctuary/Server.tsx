@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Fragment } from "react";
-import WellnessSanctuaryImage from "@/public/WellnessSanctuaryImage.png";
+import ClinicalPsychology from "@/public/ClinicalPsychology.png";
 import ResponsiveMaskText from "@/components/Client/ResponsiveMaskTextVariant";
 import SectionTitle from "@/components/Server/SectionTitle";
 import MaskText from "@/components/Server/MaskText";
@@ -27,8 +27,8 @@ export default function WellnessSanctuary() {
     <div className="flex flex-col bg-[#ff9f1c] text-[#cbf3f0] md:grid md:grid-cols-2">
       <ResponsiveImage parallaxAmount={20}>
         <Image
-          src={WellnessSanctuaryImage}
-          alt="wellness-sanctuary-image"
+          src={ClinicalPsychology}
+          alt="clinical-psychology-image"
           className="h-auto w-full"
         />
       </ResponsiveImage>
@@ -41,13 +41,13 @@ export default function WellnessSanctuary() {
           />
           <MaskText
             lines={[
-              <>Expert diagnosis and personalized</>,
-              <>counseling using evidence-based approaches.</>,
-              <>Life coaching and psychoeducation</>,
-              <>for holistic personal development.</>,
-              <>Transformative healing journeys.</>,
+              <span className="block" key="ws1">Expert diagnosis and personalized counseling</span>,
+              <span className="block" key="ws2">using evidence-based approaches.</span>,
+              <span className="block mt-2" key="ws3">Life coaching and psychoeducation</span>,
+              <span className="block" key="ws4">for holistic personal development.</span>,
+              <span className="block mt-2" key="ws5">Transformative healing journeys.</span>,
             ]}
-            className="text-lg [line-height:1.3] font-normal"
+            className="text-lg [line-height:1.4] font-normal whitespace-normal text-left"
           />
         </div>
       </div>
