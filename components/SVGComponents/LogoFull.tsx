@@ -42,7 +42,7 @@ export default function LogoFull({
   return (
     <Link
       href="/"
-      className="inline-flex max-w-full no-underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2ec4b6]"
+      className="inline-flex max-w-full no-underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c9a227]"
     >
       <motion.div
         animate={animate}

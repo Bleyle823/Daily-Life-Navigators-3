@@ -13,11 +13,11 @@ export default function SelectClient({
   const [selectedOption, setSelectedOption] =
     useState<string>(defaultSelection);
   return (
-    <div className="cursor-pointer border-b border-[#919d86] bg-[#c4c7b3] px-4 py-3 md:px-6">
+    <div className="cursor-pointer border-b border-[#c9a227]/40 bg-[#1e2a4a] px-4 py-3 md:px-6">
       <select
         value={selectedOption}
         onChange={(e) => setSelectedOption(e.target.value)}
-        className="cursor-pointer bg-[#c4c7b3] text-xs outline-none md:text-base"
+        className="cursor-pointer bg-[#1e2a4a] text-xs text-[#f5e6c8] outline-none md:text-base"
       >
         {options.map((option, i) => (
           <option key={option + i} value={option}>

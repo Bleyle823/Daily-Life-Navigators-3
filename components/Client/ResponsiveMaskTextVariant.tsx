@@ -25,7 +25,7 @@ export default function ResponsiveMaskTextVariant({
     <MaskText
       lines={lines}
       className={cn(
-        "font-light text-nowrap text-[#cbf3f0] [&_span]:text-[#ff9f1c]",
+        "font-light text-nowrap text-[#f5e6c8] [&_span]:text-[#c9a227]",
         className,
       )}
       style={{ ...style }}

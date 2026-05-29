@@ -17,7 +17,12 @@ const BasisGrotesquePro = localFont({
 
 export const metadata: Metadata = {
   title: "Daily Life Navigators | Psychological Services",
-  description: "Healing is Possible. Growth is Within Reach. Providing consistent and effective assessments that guide our preventive and curative psychotherapy services.",
+  description:
+    "Healing is Possible. Growth is Within Reach. Providing consistent and effective assessments that guide our preventive and curative psychotherapy services.",
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -29,7 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <ReactLenis root>
         <body
-          className={`${BasisGrotesquePro.variable} overflow-x-clip antialiased selection:bg-[#ced1bf] selection:text-[#2b3530]`}
+          className={`${BasisGrotesquePro.variable} overflow-x-clip antialiased selection:bg-[#c9a227] selection:text-[#0d1117]`}
         >
           <WindowSizeProvider>{children}</WindowSizeProvider>
         </body>

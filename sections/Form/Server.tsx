@@ -19,16 +19,16 @@ export default function FormServer() {
   ];
 
   return (
-    <div className="flex flex-col bg-[#ffbf69] md:grid md:grid-cols-2">
+    <div className="flex flex-col bg-[#0d1117] md:grid md:grid-cols-2">
       <ParallaxContainer parallaxAmount={20}>
         <Image src={ClinicalPsychologyForm} alt="form-image" className="max-h-[50vh] w-full object-cover md:h-auto md:max-h-none" />
       </ParallaxContainer>
       <div className="col-start-2 flex flex-col items-center justify-center">
         <Form action={""} className="w-full max-w-102 px-6 py-16 md:px-0 md:py-24">
-          <div className="w-full text-xl font-light md:text-30">
+          <div className="w-full text-xl font-light text-[#f5e6c8] md:text-30">
             Get In Touch
           </div>
-          <div className="mt-8 mb-10 text-base md:text-lg">
+          <div className="mt-8 mb-10 text-base text-[#c9b89a] md:text-lg">
             Ready to Begin? We are here to help. Reach out to Daily Life Navigators for personalized psychological services.
             <br/><br/>
             P.O BOX 51996-00200, Nairobi, Kenya<br/>
@@ -49,7 +49,7 @@ export default function FormServer() {
               </div>
             </Label>
           </div>
-          <div className="mt-10 space-y-5 text-sm text-[#2b3530] md:text-base">
+          <div className="mt-10 space-y-5 text-sm text-[#f5e6c8] md:text-base">
             <p>I am interested in:</p>
             <div className="flex flex-wrap gap-4">
               {categories.map((category) => (
@@ -62,13 +62,13 @@ export default function FormServer() {
           </Checkbox>
           <motion.button
             type="submit"
-            className="mt-14 flex w-full cursor-pointer items-center justify-between px-6 py-5 text-base text-[#d1ccbf] md:text-lg"
-            initial={{ backgroundColor: "#2b3530" }}
-            whileHover={{ backgroundColor: "#ffbf69" }}
+            className="mt-14 flex w-full cursor-pointer items-center justify-between px-6 py-5 text-base text-[#f5e6c8] md:text-lg"
+            initial={{ backgroundColor: "#1e2a4a" }}
+            whileHover={{ backgroundColor: "#c9a227" }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
             <span>Send Message</span>
-            <NavigateSVG fill="#cbf3f0" />
+            <NavigateSVG fill="#f5e6c8" />
           </motion.button>
         </Form>
       </div>

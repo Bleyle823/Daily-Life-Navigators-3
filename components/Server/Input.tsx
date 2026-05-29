@@ -9,7 +9,7 @@ export default function Input({ className, ...rest }: InputProps) {
     <input
       {...rest}
       className={cn(
-        "w-full border-b border-[#919d86] bg-[#c4c7b3] px-4 py-3 text-xs outline-none md:px-6 md:text-base",
+        "w-full border-b border-[#c9a227]/40 bg-[#1e2a4a] px-4 py-3 text-xs text-[#f5e6c8] outline-none placeholder:text-[#c9b89a]/50 md:px-6 md:text-base",
         className,
       )}
     />

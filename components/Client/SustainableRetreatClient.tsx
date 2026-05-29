@@ -47,11 +47,11 @@ export default function SustainableRetreatClient() {
           </motion.div>
         ))}
       </div>
-      <div className="-mx-8-25 grid grid-rows-5 divide-y divide-[#cbf3f0] border-y border-[#cbf3f0] md:col-span-2 md:col-start-2 md:row-start-2 md:mx-0">
+      <div className="-mx-8-25 grid grid-rows-5 divide-y divide-[#c9a227]/40 border-y border-[#c9a227]/40 md:col-span-2 md:col-start-2 md:row-start-2 md:mx-0">
         {items.map((eachItem, index) => (
           <div
             key={`item-${index + 1}`}
-            className="relative flex h-full cursor-pointer items-center justify-between p-5 text-lg font-normal [line-height:1] text-[#cbf3f0] md:text-26"
+            className="relative flex h-full cursor-pointer items-center justify-between p-5 text-lg font-normal [line-height:1] text-[#f5e6c8] md:text-26"
             onMouseEnter={() => handleFocus(index, false)}
             onMouseLeave={() => handleFocus(0, false)}
           >

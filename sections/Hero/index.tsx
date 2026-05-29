@@ -3,7 +3,7 @@ import HeroServer from "./Server";
 
 export default function HeroWrapper() {
   return (
-    <div className="relative bg-[#2b3530]">
+    <div className="relative bg-[#0d1117]">
       <HeroClient />
       <HeroServer />
     </div>

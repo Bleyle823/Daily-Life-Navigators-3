@@ -58,7 +58,7 @@ export default function NavBar() {
             paddingBlock: isMobile
               ? "calc(18 * var(--multiplier))"
               : "calc(8 * var(--multiplier))",
-            backgroundColor: "rgba(206, 209, 191,1)",
+            backgroundColor: "rgba(13, 17, 23, 0.97)",
             y,
           },
         }}
@@ -69,7 +69,7 @@ export default function NavBar() {
           className="h-auto w-fit max-w-[min(100%,18rem)] origin-left md:max-w-none"
           variants={{
             initial: { color: "#FFFFFF" },
-            animate: { color: "#2ec4b6" },
+            animate: { color: "#c9a227" },
           }}
         />
         {navItems.length > 0 && (
@@ -80,11 +80,11 @@ export default function NavBar() {
                   className={cn(
                     "text-base font-normal",
                     state
-                      ? "[&>.animated-underline]:bg-[#2ec4b6]"
+                      ? "[&>.animated-underline]:bg-[#c9a227]"
                       : "[&>.animated-underline]:bg-white",
                   )}
                   variants={{
-                    animate: { color: "#2ec4b6" },
+                    animate: { color: "#c9a227" },
                     initial: { color: "#ffffff" },
                   }}
                 >
@@ -99,13 +99,13 @@ export default function NavBar() {
             className={cn(
               "relative hidden w-fit cursor-pointer items-center gap-4 px-5 py-4.5 text-base [line-height:0.8] font-normal md:flex",
               state
-                ? "text-[#2ec4b6] [&_svg]:[stroke:#2ec4b6]"
+                ? "text-[#c9a227] [&_svg]:[stroke:#c9a227]"
                 : "text-white [&_svg]:[stroke:white]",
             )}
           >
             Join Us
             <NavigateSVG
-              style={{ fill: state ? "#ffffff" : "#2ec4b6" }}
+              style={{ fill: state ? "#0d1117" : "#c9a227" }}
               className="mr-2.5 size-2.5"
             />
           </BorderedButton>
@@ -133,7 +133,7 @@ export default function NavBar() {
               <CloseIcon className="size-7 [&_path]:[stroke-width:1px]" />
             ) : (
               <AnimatedBurger
-                className={cn(state ? "[stroke:#2ec4b6]" : "[stroke:white]")}
+                className={cn(state ? "[stroke:#c9a227]" : "[stroke:white]")}
               />
             )}
           </motion.button>

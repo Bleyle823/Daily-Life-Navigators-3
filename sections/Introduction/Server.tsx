@@ -9,7 +9,7 @@ import ResponsiveImage from "@/components/Client/ResponsiveImage";
 
 export default function IntroductionServer() {
   return (
-    <div className="grid grid-rows-[auto_auto_auto] gap-y-12 bg-[#2ec4b6] px-3-75 pt-42-5 pb-35 text-[#cbf3f0] md:grid-cols-[1fr_1.9fr] md:grid-rows-[auto_auto] md:gap-y-32 md:px-15 md:pt-56-25 md:pb-50">
+    <div className="grid grid-rows-[auto_auto_auto] gap-y-12 bg-[#1e2a4a] px-3-75 pt-42-5 pb-35 text-[#f5e6c8] md:grid-cols-[1fr_1.9fr] md:grid-rows-[auto_auto] md:gap-y-32 md:px-15 md:pt-56-25 md:pb-50">
       <motion.div className="mb-2 md:col-span-2 md:col-start-2 md:mb-0">
         <ResponsiveImage parallaxAmount={8}>
           <Image

@@ -58,7 +58,7 @@ export default function SideBar({ setOpenSideBar }: SideBarProps) {
       className="fixed top-0 z-[200] w-full"
     >
       <motion.div
-        className="flex h-screen bg-[#ffbf69]"
+        className="flex h-screen bg-[#0d1117]"
         initial={{ clipPath: "inset(100% 0% 0% 0%)" }}
         animate={{ clipPath: "inset(0% 0% 0% 0%)" }}
         transition={{
@@ -119,7 +119,7 @@ export default function SideBar({ setOpenSideBar }: SideBarProps) {
                         ease: [0.24, 0.43, 0.15, 0.97],
                       }}
                       key={"link-" + (i + 1)}
-                      className="cursor-default py-2 text-3000svh [line-height:120%] font-light text-[#2ec4b6] underline"
+                      className="cursor-default py-2 text-3000svh [line-height:120%] font-light text-[#c9a227] underline"
                     >
                       {eachColData.link}
                     </motion.div>
@@ -159,10 +159,10 @@ export default function SideBar({ setOpenSideBar }: SideBarProps) {
                 ease: [0.24, 0.43, 0.15, 0.97],
               }}
               id="contact-us"
-              className="space-y-2400svh text-1800svh text-[#2ec4b6]"
+              className="space-y-2400svh text-1800svh text-[#c9a227]"
             >
-              <div className="text-[#2ec4b6]/80">Contact Us</div>
-              <div className="flex items-center [&_.animated-underline]:h-[2px] [&_.animated-underline]:bg-[#2ec4b6]">
+              <div className="text-[#c9a227]/70">Contact Us</div>
+              <div className="flex items-center [&_.animated-underline]:h-[2px] [&_.animated-underline]:bg-[#c9a227]">
                 <span>info.dailylifenavigators@gmail.com</span>
                 <div className="mx-5">|</div>
                 <span>+254-757-011-751</span>

@@ -45,7 +45,7 @@ function Innovation() {
   const imgs = [Image1, Image2, Image3, Image4, Image5];
   return (
     <div
-      className="relative h-[500vh] cursor-pointer overflow-clip bg-[#2b3530]"
+      className="relative h-[500vh] cursor-pointer overflow-clip bg-[#0d1117]"
       ref={ref}
     >
       <motion.div

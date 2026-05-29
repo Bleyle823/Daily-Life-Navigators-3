@@ -9,13 +9,13 @@ interface StyledLinkProps extends LinkProps {
   className?: string;
   style?: CSSProperties;
   underlineColor?: string;
-  arrowFill?: "#2ec4b6" | "#cbf3f0" | "#FFFFFF";
+  arrowFill?: "#c9a227" | "#f5e6c8" | "#FFFFFF";
   active?: boolean;
   href: string;
 }
 export default function StyledLink({
   children,
-  arrowFill = "#cbf3f0",
+  arrowFill = "#f5e6c8",
   underlineColor = "#d0cbbe",
   active = false,
   href,

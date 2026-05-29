@@ -3,21 +3,21 @@ import cn from "@/utils/cn";
 import { AnimationProps, MotionStyle, Variants } from "motion/react";
 
 interface NavigateSVGProps extends AnimationProps {
-  fill?: "#2ec4b6" | "#cbf3f0" | "#FFFFFF";
+  fill?: "#c9a227" | "#f5e6c8" | "#FFFFFF";
   className?: string;
   style?: MotionStyle;
   animateOnHover?: boolean;
   variants?: Variants;
 }
 export default function NavigateSVG({
-  fill = "#cbf3f0",
+  fill = "#f5e6c8",
   className,
   style,
   animateOnHover = false,
   variants = {
     initial: { fill },
     whileHover: {
-      fill: "#2b3530",
+      fill: "#0d1117",
     },
   },
 }: NavigateSVGProps) {

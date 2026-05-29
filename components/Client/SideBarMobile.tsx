@@ -23,19 +23,19 @@ export default function SideBarMobile() {
             ease: [0.24, 0.43, 0.15, 0.97],
             duration: 0.8,
           }}
-          className="h-screen overflow-y-scroll bg-[#ffbf69] px-3-75 pt-12000svh"
+          className="h-screen overflow-y-scroll bg-[#0d1117] px-3-75 pt-12000svh"
         >
           {links.length > 0 && (
             <>
-              <span className="text-sm text-[#2ec4b680]">Discover Pages</span>
-              <div className="my-3200svh text-[#2ec4b6]">
+              <span className="text-sm text-[#c9a22780]">Discover Pages</span>
+              <div className="my-3200svh text-[#c9a227]">
                 {links.map(({ link, href }, i) => (
                   <StyledLink
                     className="mb-750svh text-lg font-light"
                     key={link}
                     href={href}
-                    underlineColor="#2ec4b6"
-                    arrowFill="#2ec4b6"
+                    underlineColor="#c9a227"
+                    arrowFill="#c9a227"
                     active={i == 0}
                   >
                     {link}
@@ -44,7 +44,7 @@ export default function SideBarMobile() {
               </div>
             </>
           )}
-          <ContactUs className="gap-y-8 text-base text-[#2ec4b6] max-md:mt-16 md:hidden [&>:first-child]:text-sm [&>:first-child]:text-[#2ec4b6]/80 [&>div]:gap-x-5" />
+          <ContactUs className="gap-y-8 text-base text-[#c9a227] max-md:mt-16 md:hidden [&>:first-child]:text-sm [&>:first-child]:text-[#c9a227]/70 [&>div]:gap-x-5" />
         </motion.div>
       </AnimatePresence>
     </div>
