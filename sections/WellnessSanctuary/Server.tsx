@@ -41,11 +41,11 @@ export default function WellnessSanctuary() {
           />
           <MaskText
             lines={[
-              <span className="block" key="ws1">Expert diagnosis and personalized counseling</span>,
-              <span className="block" key="ws2">using evidence-based approaches.</span>,
-              <span className="block mt-2" key="ws3">Life coaching and psychoeducation</span>,
-              <span className="block" key="ws4">for holistic personal development.</span>,
-              <span className="block mt-2" key="ws5">Transformative healing journeys.</span>,
+              <span className="block" key="ws1">Individual, couple, family &amp; group therapy.</span>,
+              <span className="block mt-2" key="ws2">Psychometric &amp; psychological assessments.</span>,
+              <span className="block mt-2" key="ws3">Corporate wellness &amp; employee assistance programs.</span>,
+              <span className="block mt-2" key="ws4">Psychoeducation, life skills &amp; resilience training.</span>,
+              <span className="block mt-2" key="ws5">Research, advocacy &amp; community mental health campaigns.</span>,
             ]}
             className="text-lg [line-height:1.4] font-normal whitespace-normal text-left"
           />

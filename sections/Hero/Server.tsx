@@ -25,7 +25,7 @@ export default function HeroServer() {
             className="text-white"
           >
             {
-              "Healing is Possible • Growth is Within Reach • Navigate • Thrive • Flourish • "
+              "Healing the Mind • Renewing the Spirit • Navigating Life • Navigate • Thrive • Flourish • "
             }
           </ResponsiveMarquee>,
         ]}

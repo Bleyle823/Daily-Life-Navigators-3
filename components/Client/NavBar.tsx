@@ -29,7 +29,11 @@ export default function NavBar() {
       }
     }
   });
-  const navItems: { href: string; children: string }[] = [];
+  const navItems: { href: string; children: string }[] = [
+    { href: "/about", children: "About" },
+    { href: "/services", children: "Services" },
+    { href: "/#contact", children: "Contact" },
+  ];
   return (
     <>
       <motion.div
@@ -95,20 +99,22 @@ export default function NavBar() {
           </nav>
         )}
         <div className="flex items-center gap-8">
-          <BorderedButton
-            className={cn(
-              "relative hidden w-fit cursor-pointer items-center gap-4 px-5 py-4.5 text-base [line-height:0.8] font-normal md:flex",
-              state
-                ? "text-[#c9a227] [&_svg]:[stroke:#c9a227]"
-                : "text-white [&_svg]:[stroke:white]",
-            )}
-          >
-            Join Us
-            <NavigateSVG
-              style={{ fill: state ? "#0d1117" : "#c9a227" }}
-              className="mr-2.5 size-2.5"
-            />
-          </BorderedButton>
+          <Link href="/#contact">
+            <BorderedButton
+              className={cn(
+                "relative hidden w-fit cursor-pointer items-center gap-4 px-5 py-4.5 text-base [line-height:0.8] font-normal md:flex",
+                state
+                  ? "text-[#c9a227] [&_svg]:[stroke:#c9a227]"
+                  : "text-white [&_svg]:[stroke:white]",
+              )}
+            >
+              Book a Session
+              <NavigateSVG
+                style={{ fill: state ? "#0d1117" : "#c9a227" }}
+                className="mr-2.5 size-2.5"
+              />
+            </BorderedButton>
+          </Link>
           <motion.button
             initial="initial"
             whileHover="whileHover"

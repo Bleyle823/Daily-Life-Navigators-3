@@ -7,7 +7,11 @@ interface LinkItem {
   link: string;
 }
 export default function SideBarMobile() {
-  const links: LinkItem[] = [];
+  const links: LinkItem[] = [
+    { href: "/about", link: "About Us" },
+    { href: "/services", link: "Services" },
+    { href: "/#contact", link: "Contact" },
+  ];
   return (
     <div className="fixed top-0 z-[30] h-screen w-full overflow-x-hidden">
       <AnimatePresence>

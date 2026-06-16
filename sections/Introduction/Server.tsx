@@ -21,31 +21,31 @@ export default function IntroductionServer() {
       </motion.div>
 
       <SectionTitle className="md:col-start-1 md:row-start-2">
-        Our Approach
+        Who We Help
       </SectionTitle>
 
       <div className="flex flex-col gap-12 md:col-span-2 md:col-start-2 md:gap-20">
         <ResponsiveMaskText
           mobile={[
-            <Fragment key="m-1">Comprehensive mental</Fragment>,
+            <Fragment key="m-1">Professional support for</Fragment>,
             <Fragment key="m-2">
-              <span>health care through</span>
+              <span>individuals, families,</span>
             </Fragment>,
-            <Fragment key="m-3">evidence-based treatment</Fragment>,
-            <Fragment key="m-4">and compassionate support.</Fragment>,
+            <Fragment key="m-3">and organizations across</Fragment>,
+            <Fragment key="m-4">all ages and life stages.</Fragment>,
           ]}
           desktop={[
             <Fragment key="d-1">
-              Comprehensive <span>mental health</span>
+              Professional support for <span>individuals,</span>
             </Fragment>,
             <Fragment key="d-2">
-              <span>care through</span> evidence-based
+              <span>families,</span> and organizations
             </Fragment>,
             <Fragment key="d-3">
-              treatment and compassionate
+              across all ages and
             </Fragment>,
             <Fragment key="d-4">
-              support.
+              life stages.
             </Fragment>,
           ]}
           className="text-24 [line-height:1] md:text-40 [&>:first-child]:indent-23"
@@ -53,13 +53,13 @@ export default function IntroductionServer() {
 
         <MaskText
           lines={[
-            <Fragment key="l-1">Daily Life Navigators is dedicated to</Fragment>,
-            <Fragment key="l-2">providing consistent and effective</Fragment>,
+            <Fragment key="l-1">We provide accurate diagnosis, evidence-based therapy,</Fragment>,
+            <Fragment key="l-2">psychoeducation, and corporate wellness programs</Fragment>,
             <Fragment key="l-3">
-              assessments that guide our preventive
+              for children, adolescents, adults, professionals,
             </Fragment>,
             <Fragment key="l-4">
-              and curative psychotherapy services.
+              and seniors — in person and virtually across Kenya.
             </Fragment>,
           ]}
           className="text-base [line-height:1.3] font-normal md:text-lg"

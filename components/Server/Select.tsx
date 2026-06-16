@@ -23,7 +23,7 @@ export default async function Select({ options }: SelectProps) {
 
   return (
     <SelectClient
-      defaultSelection={countryData[0].name}
+      defaultSelection={arrayOfProperty[0]}
       options={arrayOfProperty}
     />
   );

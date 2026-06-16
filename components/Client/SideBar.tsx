@@ -10,7 +10,7 @@ import { useImageReveal } from "@/hooks/useImageReveal";
 interface LinkItem {
   href: string;
   link: string;
-  src: StaticImageData;
+  src?: StaticImageData;
 }
 
 interface SideBarProps {
@@ -18,7 +18,11 @@ interface SideBarProps {
 }
 export default function SideBar({ setOpenSideBar }: SideBarProps) {
   const { imgContainerRef, handleFocus } = useImageReveal();
-  const data: LinkItem[] = [];
+  const data: LinkItem[] = [
+    { href: "/about", link: "About Us" },
+    { href: "/services", link: "Services" },
+    { href: "/#contact", link: "Contact" },
+  ];
 
   const temp = {
     initialDelay: 0.8 * 0.4,
@@ -88,7 +92,7 @@ export default function SideBar({ setOpenSideBar }: SideBarProps) {
           className="relative flex-[0.9]"
           ref={imgContainerRef}
         >
-          {data.length > 0 && data.map(({ src, link }, i) => (
+          {data.length > 0 && data.map(({ src, link }, i) => src ? (
             <motion.div
               key={link}
               data-index={i}
@@ -97,44 +101,27 @@ export default function SideBar({ setOpenSideBar }: SideBarProps) {
             >
               <Image src={src} alt={link} fill style={{ objectFit: "cover" }} />
             </motion.div>
-          ))}
+          ) : null)}
         </motion.div>
         <div className="flex-1 pt-7000svh pr-16 pb-3500svh pl-48">
           {data.length > 0 && (
             <>
-              <span className="text-1800svh text-[#2ec4b6]/80">Discover pages</span>
+              <span className="text-1800svh text-[#c9a227]/70">Navigate</span>
               <nav
                 aria-label="pages"
-                className="mt-6400svh mb-8000svh grid grid-flow-col-dense grid-cols-2 grid-rows-5"
+                className="mt-6400svh mb-8000svh flex flex-col gap-y-2"
               >
-                {data.map((eachColData, i) =>
-                  i === 0 ? (
-                    <motion.div
-                      initial="initial"
-                      animate="animate"
-                      variants={variants}
-                      transition={{
-                        duration: temp.duration,
-                        delay: temp.initialDelay + (i % 5) * temp.delay,
-                        ease: [0.24, 0.43, 0.15, 0.97],
-                      }}
-                      key={"link-" + (i + 1)}
-                      className="cursor-default py-2 text-3000svh [line-height:120%] font-light text-[#c9a227] underline"
-                    >
-                      {eachColData.link}
-                    </motion.div>
-                  ) : (
-                    <CustomLink
-                      {...temp}
-                      key={"link-" + (i + 1)}
-                      href={eachColData.href}
-                      sNo={i + 1}
-                      handleFocus={handleFocus}
-                    >
-                      {eachColData.link}
-                    </CustomLink>
-                  ),
-                )}
+                {data.map((eachColData, i) => (
+                  <CustomLink
+                    {...temp}
+                    key={"link-" + (i + 1)}
+                    href={eachColData.href}
+                    sNo={i + 1}
+                    handleFocus={handleFocus}
+                  >
+                    {eachColData.link}
+                  </CustomLink>
+                ))}
               </nav>
             </>
           )}
