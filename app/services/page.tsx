@@ -85,6 +85,13 @@ const services = [
         duration: "As needed",
         format: "In-person",
       },
+      {
+        title: "The Listening Hub",
+        description:
+          "A confidential digital employee support platform through which employees access trained listeners and wellbeing professionals via secure technology — before challenges escalate into absenteeism, conflict, or reduced performance.",
+        duration: "Ongoing / organization subscription",
+        format: "Digital platform",
+      },
     ],
   },
   {

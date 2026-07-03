@@ -18,6 +18,7 @@ export default function Footer() {
           <Link href="/terms" className="hover:text-[#c9a227] transition-colors">Terms &amp; Conditions</Link>
           <Link href="/about" className="hover:text-[#c9a227] transition-colors">About Us</Link>
           <Link href="/services" className="hover:text-[#c9a227] transition-colors">Services</Link>
+          <Link href="/listening-hub" className="hover:text-[#c9a227] transition-colors">The Listening Hub</Link>
           <Link
             href="https://wa.me/254757011751"
             target="_blank"

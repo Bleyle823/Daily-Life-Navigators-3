@@ -21,6 +21,7 @@ export default function SideBar({ setOpenSideBar }: SideBarProps) {
   const data: LinkItem[] = [
     { href: "/about", link: "About Us" },
     { href: "/services", link: "Services" },
+    { href: "/listening-hub", link: "The Listening Hub" },
     { href: "/#contact", link: "Contact" },
   ];
 

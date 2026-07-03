@@ -32,6 +32,7 @@ export default function NavBar() {
   const navItems: { href: string; children: string }[] = [
     { href: "/about", children: "About" },
     { href: "/services", children: "Services" },
+    { href: "/listening-hub", children: "Listening Hub" },
     { href: "/#contact", children: "Contact" },
   ];
   return (

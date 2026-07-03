@@ -1,6 +1,7 @@
 import NavBar from "@/components/Client/NavBar";
 import SustainableRetreat from "@/components/Client/SustainableRetreat";
 import ElementisStory from "@/sections/ElementisStory";
+import ListeningHub from "@/sections/ListeningHub";
 import WellnessSanctuary from "@/sections/WellnessSanctuary";
 import Footer from "@/sections/Footer/Server";
 import Form from "@/sections/Form";
@@ -16,6 +17,7 @@ export default function Home() {
       <WellnessSanctuary />
       <Innovation />
       <ElementisStory />
+      <ListeningHub />
       <SustainableRetreat />
       <Form />
       <Footer />
