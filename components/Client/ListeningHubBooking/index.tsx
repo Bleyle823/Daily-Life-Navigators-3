@@ -306,7 +306,7 @@ export default function ListeningHubBooking() {
                 onChange={(e) => update("email", e.target.value)}
               />
             </Label>
-            <Label label="Organization (optional — for corporate employees)">
+            <Label label="Organization (optional)">
               <Input
                 type="text"
                 placeholder="Company or institution name"
@@ -353,8 +353,8 @@ export default function ListeningHubBooking() {
         <div>
           <h2 className="mb-2 text-2xl font-light md:text-3xl">Pay via M-Pesa</h2>
           <p className="mb-8 text-sm text-[#c9b89a]">
-            Complete payment to secure your slot. Use your booking reference as the account
-            reference when paying.
+            Pay to <strong className="text-[#f5e6c8]">{MPESA.phoneNumber}</strong> to secure your
+            slot. Use your booking reference when sending payment.
           </p>
 
           <div className="mb-8 border border-[#c9a227]/30 bg-[#1e2a4a] p-6">
@@ -441,8 +441,9 @@ export default function ListeningHubBooking() {
             </div>
             <h2 className="text-2xl font-light md:text-3xl">Almost done — confirm your payment</h2>
             <p className="mt-3 text-sm text-[#c9b89a]">
-              Send your M-Pesa receipt to us on WhatsApp so we can confirm your booking and
-              schedule your session.
+              Send your M-Pesa transaction receipt to{" "}
+              <strong className="text-[#f5e6c8]">{MPESA.phoneNumber}</strong> on WhatsApp, or call
+              to confirm your booking and schedule your session.
             </p>
           </div>
 
@@ -479,7 +480,7 @@ export default function ListeningHubBooking() {
           </Label>
 
           <div className="mt-8 space-y-4">
-            <p className="text-sm font-medium">Choose how to send your receipt:</p>
+            <p className="text-sm font-medium">After paying, send your M-Pesa receipt SMS:</p>
 
             <a
               href={whatsAppUrl}
@@ -488,7 +489,7 @@ export default function ListeningHubBooking() {
               className="flex w-full items-center justify-center gap-3 rounded bg-[#25D366] px-6 py-4 text-sm font-medium text-white transition-opacity hover:opacity-90"
             >
               <WhatsAppIcon />
-              Send booking &amp; receipt via WhatsApp
+              Send M-Pesa receipt via WhatsApp ({MPESA.phoneNumber})
             </a>
 
             <a

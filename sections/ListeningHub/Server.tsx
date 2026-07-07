@@ -40,12 +40,12 @@ export default function ListeningHubServer() {
           <MaskText
             lines={[
               <span className="block" key="lh1">
-                A confidential digital employee support platform giving every
-                employee a safe space to be heard.
+                A confidential listening service open to everyone — a safe
+                space to be heard, without judgment.
               </span>,
               <span className="block mt-4" key="lh2">
-                Prevent absenteeism, conflict, reduced performance, and
-                resignation — before they take hold.
+                Book a session, pay via M-Pesa to 0720977842, and confirm on
+                WhatsApp or by phone.
               </span>,
             ]}
             className="text-lg [line-height:1.4] font-normal whitespace-normal text-left"
@@ -76,7 +76,7 @@ export default function ListeningHubServer() {
         <ResponsiveImage parallaxAmount={20}>
           <Image
             src={ClinicalPsychology}
-            alt="The Listening Hub — corporate employee support"
+            alt="The Listening Hub — confidential listening support"
             className="h-auto w-full"
           />
         </ResponsiveImage>

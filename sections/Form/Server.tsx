@@ -12,8 +12,13 @@ import Link from "next/link";
 
 export default function FormServer() {
   const categories = [
-    "Clinical Diagnosis",
+    "The Listening Hub",
+    "Psychological/Psychometric Assessments",
+    "Diagnosis",
     "Psychoeducation",
+    "Psychotherapy/Counselling",
+    "Group Therapy",
+    "Mediation",
     "Training & Coaching",
     "Research",
     "Other",

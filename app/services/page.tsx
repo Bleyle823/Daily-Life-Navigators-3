@@ -88,9 +88,9 @@ const services = [
       {
         title: "The Listening Hub",
         description:
-          "A confidential digital employee support platform through which employees access trained listeners and wellbeing professionals via secure technology — before challenges escalate into absenteeism, conflict, or reduced performance.",
-        duration: "Ongoing / organization subscription",
-        format: "Digital platform",
+          "Confidential listening support for everyone — book a 15 min to 2 hr session with trained listeners via phone, WhatsApp, or video. Pay via M-Pesa to 0720977842.",
+        duration: "15 min – 2 hrs",
+        format: "Phone / WhatsApp / Video",
       },
     ],
   },

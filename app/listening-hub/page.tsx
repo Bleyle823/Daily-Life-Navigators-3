@@ -2,10 +2,12 @@ import NavBar from "@/components/Client/NavBar";
 import Footer from "@/sections/Footer/Server";
 import Link from "next/link";
 
+import { LISTENING_HUB_CONTACT } from "@/lib/listening-hub/config";
+
 export const metadata = {
   title: "The Listening Hub | Daily Life Navigators Psychological Services",
   description:
-    "Confidential digital employee support — trained listeners and wellbeing professionals through a secure platform.",
+    "Confidential listening support for everyone — trained listeners and wellbeing professionals through a secure platform. Book from KES 300.",
 };
 
 const howItWorks = [
@@ -23,9 +25,9 @@ const howItWorks = [
   },
   {
     step: "03",
-    title: "Confirm on WhatsApp",
+    title: "Confirm on WhatsApp or call",
     description:
-      "Forward your M-Pesa receipt message to us on WhatsApp or call to confirm. We verify payment and lock in your session within 2 hours.",
+      "Forward your M-Pesa receipt SMS to 0720977842 on WhatsApp, or call to confirm. We verify payment and lock in your session within 2 hours.",
   },
   {
     step: "04",
@@ -72,10 +74,9 @@ export default function ListeningHubPage() {
           The Listening Hub
         </h1>
         <p className="mt-6 max-w-2xl text-base leading-relaxed text-[#c9b89a] md:text-lg">
-          A confidential digital employee support platform designed to provide
-          every employee with a safe space to be heard — before challenges
-          escalate into absenteeism, conflict, reduced performance, or
-          resignation.
+          A confidential listening service open to everyone — whether you are dealing with
+          stress, grief, relationships, or simply need someone to hear you. Book a session,
+          pay via M-Pesa, and connect with a trained listener at your preferred time.
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <Link
@@ -103,18 +104,18 @@ export default function ListeningHubPage() {
         </h2>
         <div className="max-w-3xl space-y-5 text-base leading-relaxed text-[#c9b89a] md:text-lg">
           <p>
-            The Listening Hub is a secure digital platform through which
-            employees can confidentially access trained listeners and wellbeing
-            professionals. It gives organizations a proactive way to support
-            their people — not only when crises hit, but in the everyday moments
-            when someone simply needs to be heard.
+            The Listening Hub is a secure digital platform through which anyone
+            can confidentially access trained listeners and wellbeing
+            professionals. Whether you are navigating work stress, personal
+            challenges, or simply need a safe space to talk, we are here to
+            listen — before small concerns grow into bigger problems.
           </p>
           <p>
-            Many workplace challenges begin quietly: stress, conflict, burnout,
-            or personal struggles that employees hesitate to share. Without a
-            safe outlet, these issues can grow into absenteeism, team conflict,
-            declining performance, or resignation. The Listening Hub intervenes
-            early — before small concerns become organizational problems.
+            Many challenges begin quietly: stress, conflict, burnout, or
+            personal struggles that are hard to share. Without a safe outlet,
+            these issues can affect your wellbeing, relationships, and daily
+            life. The Listening Hub offers early, compassionate support for
+            individuals from all walks of life.
           </p>
         </div>
       </section>
@@ -135,15 +136,16 @@ export default function ListeningHubPage() {
       <section className="border-y border-[#c9a227]/20 bg-[#0d1117] px-6 py-20 md:px-16 md:py-28">
         <div className="mx-auto max-w-3xl text-center">
           <p className="mb-4 text-xs uppercase tracking-widest text-[#c9a227]">
-            For Individuals &amp; Employees
+            For Everyone
           </p>
           <h2 className="mb-6 text-3xl font-light md:text-4xl">
             Book a confidential listening session
           </h2>
           <p className="mb-8 text-base leading-relaxed text-[#c9b89a]">
-            Choose a 15-minute, 30-minute, 1-hour, or 2-hour slot. Pay securely via
-            M-Pesa, confirm on WhatsApp, and connect with a trained listener at your
-            preferred time.
+            Choose a 15-minute (KES 300), 30-minute (KES 500), 1-hour (KES 1,000), or
+            2-hour (KES 2,000) slot. Pay to{" "}
+            <strong className="text-[#f5e6c8]">{LISTENING_HUB_CONTACT.displayPhone}</strong>{" "}
+            via M-Pesa, then forward your M-Pesa receipt on WhatsApp or call to confirm.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
@@ -224,8 +226,8 @@ export default function ListeningHubPage() {
           <p>
             Confidentiality is at the heart of The Listening Hub. All
             interactions are protected in accordance with professional ethical
-            standards and applicable data protection requirements. Employees can
-            speak freely knowing their conversations are private and secure.
+            standards and applicable data protection requirements. You can
+            speak freely knowing your conversations are private and secure.
           </p>
           <p>
             For full details on how we handle personal information, see our{" "}
@@ -257,7 +259,7 @@ export default function ListeningHubPage() {
             Get in Touch
           </Link>
           <Link
-            href="https://wa.me/254757011751?text=Hello%2C%20I%20would%20like%20to%20learn%20more%20about%20The%20Listening%20Hub%20for%20my%20organization."
+            href={`https://wa.me/${LISTENING_HUB_CONTACT.whatsapp}?text=${encodeURIComponent("Hello, I would like to learn more about The Listening Hub.")}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 border border-[#c9a227]/40 px-8 py-4 text-sm font-medium text-[#c9a227] transition-colors hover:border-[#c9a227]"

@@ -17,7 +17,7 @@ export const LISTENING_SESSIONS: ListeningSession[] = [
     id: "15",
     label: "15 Minutes",
     durationMinutes: 15,
-    priceKes: 500,
+    priceKes: 300,
     tagline: "Quick Check-In",
     bestFor: [
       "Need to vent or decompress quickly",
@@ -29,7 +29,7 @@ export const LISTENING_SESSIONS: ListeningSession[] = [
     id: "30",
     label: "30 Minutes",
     durationMinutes: 30,
-    priceKes: 1000,
+    priceKes: 500,
     tagline: "Standard Listening",
     bestFor: [
       "Work stress, conflict, or burnout",
@@ -42,7 +42,7 @@ export const LISTENING_SESSIONS: ListeningSession[] = [
     id: "60",
     label: "1 Hour",
     durationMinutes: 60,
-    priceKes: 1800,
+    priceKes: 1000,
     tagline: "Deep Listening",
     bestFor: [
       "Exploring concerns in greater depth",
@@ -54,7 +54,7 @@ export const LISTENING_SESSIONS: ListeningSession[] = [
     id: "120",
     label: "2 Hours",
     durationMinutes: 120,
-    priceKes: 3200,
+    priceKes: 2000,
     tagline: "Extended Support",
     bestFor: [
       "Complex or layered emotional challenges",
@@ -171,7 +171,9 @@ export function buildWhatsAppReceiptMessage(booking: {
     `Mode: ${booking.mode}`,
     booking.mpesaCode ? `M-Pesa Code: ${booking.mpesaCode}` : "M-Pesa Code: [paste from your SMS]",
     "",
-    "I have attached / will forward my M-Pesa confirmation message.",
+    "Please find my M-Pesa transaction receipt message below / attached:",
+    "[Forward or paste your full M-Pesa confirmation SMS here]",
+    "",
     "Please confirm my booking. Thank you.",
   ];
   return lines.join("\n");

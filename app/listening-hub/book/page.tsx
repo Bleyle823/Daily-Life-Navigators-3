@@ -28,8 +28,9 @@ const workflowSteps = [
   },
   {
     step: "04",
-    title: "Confirm on WhatsApp",
-    description: "Forward your M-Pesa receipt message so we can lock in your session.",
+    title: "Confirm on WhatsApp or call",
+    description:
+      "Forward your M-Pesa receipt SMS to 0720977842 on WhatsApp, or call to confirm. We verify payment and lock in your session within 2 hours.",
   },
 ];
 
@@ -91,7 +92,7 @@ export default function BookListeningSessionPage() {
             {[
               {
                 q: "Who is this for?",
-                a: "Individuals, employees, and professionals who need a confidential space to talk — whether about work stress, relationships, grief, anxiety, or simply needing to be heard.",
+                a: "Anyone who needs a confidential space to talk — whether about work stress, relationships, grief, anxiety, life transitions, or simply needing to be heard. You do not need to be an employee of any organization.",
               },
               {
                 q: "Is it therapy?",
@@ -99,7 +100,7 @@ export default function BookListeningSessionPage() {
               },
               {
                 q: "When will my session be confirmed?",
-                a: "Once we receive and verify your M-Pesa payment on WhatsApp, we confirm within 2 hours (Mon–Sat, 8am–8pm) and a listener will reach out to finalize your exact time.",
+                a: "Once we receive and verify your M-Pesa payment receipt on WhatsApp (0720977842) or by phone, we confirm within 2 hours (Mon–Sat, 8am–8pm) and a listener will reach out to finalize your exact time.",
               },
               {
                 q: "Can my employer see that I booked?",
