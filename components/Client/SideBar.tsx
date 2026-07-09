@@ -22,6 +22,7 @@ export default function SideBar({ setOpenSideBar }: SideBarProps) {
     { href: "/about", link: "About Us" },
     { href: "/services", link: "Services" },
     { href: "/listening-hub", link: "The Listening Hub" },
+    { href: "/#book", link: "Order the Book" },
     { href: "/#contact", link: "Contact" },
   ];
 

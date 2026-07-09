@@ -19,6 +19,7 @@ export default function Footer() {
           <Link href="/about" className="hover:text-[#c9a227] transition-colors">About Us</Link>
           <Link href="/services" className="hover:text-[#c9a227] transition-colors">Services</Link>
           <Link href="/listening-hub" className="hover:text-[#c9a227] transition-colors">The Listening Hub</Link>
+          <Link href="/#book" className="hover:text-[#c9a227] transition-colors">Order the Book</Link>
           <Link
             href="https://wa.me/254757011751"
             target="_blank"

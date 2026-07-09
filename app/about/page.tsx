@@ -1,6 +1,10 @@
 import NavBar from "@/components/Client/NavBar";
 import Footer from "@/sections/Footer/Server";
 import Link from "next/link";
+import {
+  AWARENESS_AMPLIFIED_BOOK,
+  BOOK_STORES,
+} from "@/lib/book/config";
 
 export const metadata = {
   title: "About Us | Daily Life Navigators Psychological Services",
@@ -216,6 +220,36 @@ export default function AboutPage() {
         <h2 className="mb-12 max-w-xl text-3xl font-light leading-snug md:text-5xl">
           Grounded in evidence-based research
         </h2>
+
+        <div className="mb-12 max-w-3xl border border-[#c9a227]/20 p-8">
+          <p className="mb-2 text-xs uppercase tracking-widest text-[#c9a227]">Featured Book</p>
+          <h3 className="text-xl font-medium md:text-2xl">
+            {AWARENESS_AMPLIFIED_BOOK.title}: {AWARENESS_AMPLIFIED_BOOK.subtitle}
+          </h3>
+          <p className="mt-1 text-sm text-[#c9a227]">by {AWARENESS_AMPLIFIED_BOOK.author}</p>
+          <p className="mt-4 text-sm leading-relaxed text-[#c9b89a]">
+            {AWARENESS_AMPLIFIED_BOOK.description}
+          </p>
+          <div className="mt-6 flex flex-wrap gap-4">
+            <Link
+              href={BOOK_STORES.hardCopy.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#c9a227] px-6 py-3 text-sm font-medium text-[#0d1117] transition-opacity hover:opacity-90"
+            >
+              {BOOK_STORES.hardCopy.label} — {BOOK_STORES.hardCopy.vendor}
+            </Link>
+            <Link
+              href={BOOK_STORES.eCopy.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 border border-[#c9a227]/40 px-6 py-3 text-sm font-medium text-[#c9a227] transition-colors hover:border-[#c9a227]"
+            >
+              {BOOK_STORES.eCopy.label} — {BOOK_STORES.eCopy.vendor}
+            </Link>
+          </div>
+        </div>
+
         <ul className="max-w-3xl space-y-6 text-sm leading-relaxed text-[#c9b89a]">
           {[
             "Ochieng-Munda, P. (2020). Cognitive Behavioral Intervention for Trauma in Schools (CBITS) in treating PTSD among adolescents in Public Primary Schools in Informal Settlements, Kajiado County, Kenya. [Dissertation, Daystar University]",
