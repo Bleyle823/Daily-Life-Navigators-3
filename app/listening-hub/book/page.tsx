@@ -96,7 +96,7 @@ export default function BookListeningSessionPage() {
               },
               {
                 q: "Is it therapy?",
-                a: "Listening Hub sessions are professional listening and wellbeing support — not a substitute for clinical therapy or emergency care. If you are in crisis, please call emergency services or Befrienders Kenya at +254 722 178 177.",
+                a: "Listening Hub sessions are professional listening and wellbeing support. If you need clinical therapy, The Listening Hub can refer you to Daily Life Navigators therapy care. If you are in crisis, please call emergency services or Befrienders Kenya at +254 722 178 177.",
               },
               {
                 q: "When will my session be confirmed?",
